@@ -1,4 +1,27 @@
+body{
+    margin: 0;
+}
 .main-body{
     display: flex;
     justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: rosybrown;
+}
+
+.popup-car{
+    height: fit-content;
+    margin: 0 145px 14px 15px;
+}
+
+.your-popup{
+    height: fit-content;
+    margin: 0px 15px 0px 140px;
+   
+}
+
+.cards-info{
+    display: flex;
+    justify-content: space-around;
+
 }

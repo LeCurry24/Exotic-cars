@@ -5,22 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/index.css">
     <link rel="stylesheet" href="/css/add.css">
+    <link rel="stylesheet" href="/css/card.css">
     <title>CARLove</title>
 </head>
 <body>
     <main class="main-body">
-        <form class="car-info" id="add-car">
-            <input class="car-input" type="text" id="add-car-name" placeholder="CAR NAME..!">
-            <input class="car-input" type="text" id="add-year" placeholder="ADD YEAR..">
-            <input class="car-input" type="text" id="add-price" placeholder="ADD PRICE..">
-            <button type="submit" class="car-btn">submit</button>
-        </form>
-        <form class="your-info" id="add-yourself">
-                <input class="your-input" type="text"  id="add-yourself" placeholder="YOUR NAME..">
-                <button type="submit" class="yourself-btn">submit</button>
-        </form>
-
+        <div class="card-body">
+            <div class="inner-card"></div>
+                <div class="cards-info">
+                    <button id="carPopupBtn" class="popup-car">ADD CAR!!</button>
+                    <button id="popupYourselfBtn" class="your-popup">ADD YOURSELF!!</button>
+                    <div class="popup-background" id="backPop" >
+                        <form class="car-info" id="add-car">
+                            <div class="close-btn" id="close">+</div>
+                            <input class="car-input" type="text" id="addCarName" placeholder="CAR NAME..!">
+                            <input class="car-input" type="text" id="addYear" placeholder="ADD YEAR..">
+                            <input class="car-input" type="text" id="addpPrice" placeholder="ADD PRICE..">
+                            <button type="submit" class="car-btn">submit</button>
+                    </div>
+                        </form>
+                        <div class="second-pop" id="secondPop">
+                            <form class="your-info" id="add-yourself">
+                                <div class="your-btn-close" id="closeBtn">+</div>
+                                <input class="your-input" type="text"  id="addYourself" placeholder="YOUR NAME..">
+                                <button type="submit" class="yourself-btn">submit</button>
+                            </form>
+                        </div>  
+                </div>
+        </div>
     </main>
     <script src="/js/main.js"></script>
+    <script src="/js/popup.js"></script>
 </body>
 </html>

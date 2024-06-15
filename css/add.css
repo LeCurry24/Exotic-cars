@@ -1,4 +1,5 @@
 .car-info {
+    width: fit-content;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -13,6 +14,9 @@
     transition: all 0.3s ease-in-out;
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
     animation: form-animation 0.5s ease-in-out;
+    position: absolute;
+    right: 63%;
+    top: 17%
   }
   
   @keyframes car-info-animation {
@@ -25,6 +29,24 @@
       transform: rotateX(0deg);
       opacity: 1;
     }
+  }
+
+  .close-btn{
+    font-size: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10px;
+    transform: rotate(136deg);
+  }
+
+  .your-btn-close{
+    font-size: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10px;
+    transform: rotate(136deg);
   }
   
   .car-input {
@@ -78,6 +100,7 @@
   /* add info for people */
 
   .your-info {
+    width: fit-content;
     height: fit-content;
     position: relative;
     display: flex;
@@ -93,6 +116,9 @@
     transition: all 0.3s ease-in-out;
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
     animation: form-animation 0.5s ease-in-out;
+    position: absolute;
+    right: 23%;
+    top: 17%;
   }
   
   @keyframes your-info-animation {
