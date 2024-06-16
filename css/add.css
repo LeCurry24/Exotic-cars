@@ -38,6 +38,7 @@
     align-items: center;
     height: 10px;
     transform: rotate(136deg);
+    cursor: pointer;
   }
 
   .your-btn-close{
@@ -47,6 +48,7 @@
     align-items: center;
     height: 10px;
     transform: rotate(136deg);
+    cursor: pointer;
   }
   
   .car-input {

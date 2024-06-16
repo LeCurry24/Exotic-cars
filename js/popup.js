@@ -1,3 +1,5 @@
+'use strict';
+
 document.getElementById('carPopupBtn').addEventListener("click", function(){
         document.getElementById('backPop').style.display = 'flex';
     });

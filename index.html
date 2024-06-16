@@ -11,12 +11,18 @@
 <body>
     <main class="main-body">
         <div class="card-body">
-            <div class="inner-card"></div>
+            <div class="inner-card">
+                <div class="inner-card-content">
+                    <h1 id="nameOfCar" class="card-content"></h1>
+                    <button type="button" id="leftBtn" class="left-btn"><</button>
+                    <button type="button" id="rightBtn" class="right-btn">></button>
+                </div>
+            </div>
                 <div class="cards-info">
                     <button id="carPopupBtn" class="popup-car">ADD CAR!!</button>
                     <button id="popupYourselfBtn" class="your-popup">ADD YOURSELF!!</button>
                     <div class="popup-background" id="backPop" >
-                        <form class="car-info" id="add-car">
+                        <form class="car-info" id="addCar">
                             <div class="close-btn" id="close">+</div>
                             <input class="car-input" type="text" id="addCarName" placeholder="CAR NAME..!">
                             <input class="car-input" type="text" id="addYear" placeholder="ADD YEAR..">
