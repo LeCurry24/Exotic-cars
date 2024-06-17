@@ -2,23 +2,23 @@
 
 
 const carInfo = async () => {
-    const user = document.getElementById("nameOfCar").value;
 
-    await fetch("http://localhost:8000/cars",{
-        method: "post",
-        header: {"content-type": "application/json"},
-        body: user,
+    const response = await fetch("http://localhost:8000/cars",{
+        method: "get",
+        headers: {"content-type": "application/json"},
+        
     })
-
+    const data = await response.json();
+    showInfo(data[0])
 }
 
  
 
-function showInfo(Car) {
+function showInfo(nameOfCar) {
     const carName = document.getElementById('nameOfCar');
-    carName.innerText = Car.name;
+    carName.innerText = nameOfCar.name;
 
    
 };
 
-showInfo();
+carInfo();
